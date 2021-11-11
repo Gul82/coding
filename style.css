@@ -1,17 +1,75 @@
-body {
-  font-family: Arial, Helvetica, sans-serif;
+* {
   margin: 0;
   padding: 0;
 }
 
-nav {
-  background-color: #333;
+body {
+  background-color: lightslategray;
+  font-family: "Roboto", sans-serif;
 }
 
-nav > ul {
-  list-style-type: none;
+footer {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 12px;
+}
+
+p {
+  margin: 12px 0;
+}
+
+img {
+  /* border: 1px solid blue; */
+}
+
+.imagebox {
+  border: 1px solid black;
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  padding: 10px;
+}
+
+.image {
+  width: 100%;
+  border-radius: 16px;
+  display: block;
 
   margin: auto;
+  object-fit: cover;
+}
+
+main {
+  display: inline-block;
+  width: 80%;
+  margin: auto;
+  height: 100%;
+  padding: 32px;
+  background-color: linen;
+}
+
+.logo {
+  display: block;
+  margin-top: auto;
+  height: 40px;
+}
+
+/* Navigation  */
+nav {
+  background-color: #333;
+  padding: 0;
+}
+
+ul.nav {
+  list-style-type: none;
+  width: 80%;
+  margin: 0 auto;
+  padding: 0;
   overflow: hidden;
 }
 
@@ -19,49 +77,51 @@ a:link,
 a:visited,
 a:active {
   color: white;
-}
-
-a:link {
   text-decoration: none;
 }
 a:hover {
   text-decoration: underline;
 }
-
-ul li {
-  float: left;
-  color: white;
-  padding: 13px;
-}
-
-.logo-container {
-  margin-top: auto;
+ul.nav li {
   float: left;
 }
-.logo {
+
+ul.nav li:nth-last-child(1) {
+  float: right;
+}
+
+#logo-container {
+  margin-top: 4px;
+}
+
+ul.nav li:first-child a {
+  padding: 0 16px;
+}
+
+ul.nav li a {
   display: block;
-  height: 40px;
-  float: left;
-}
-
-p {
-  margin: 12px 0px 12px 12px;
-}
-
-.column_left {
-  width: 50%;
-  float: left;
-}
-.image {
-  width: 50%;
-  object-fit: cover;
-}
-
-
-.footerbar {
-  width: 100%;
-  height: 30px;
-  background-color: #333;
-  margin-top: 20px;
+  color: white;
   text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.nav li:nth-last-child(1) a {
+  color: #d81818;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.column {
+  width: 40%;
+
+  display: inline-block;
+  margin-left: 10px;
+}
+
+footer {
+  width: 100%;
+  background-color: #333;
 }

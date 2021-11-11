@@ -1,48 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
-
-    <title>Live Coding</title>
+    <title>Live Coding Demo</title>
   </head>
-
   <body>
     <header>
       <nav>
-        <div class="logo-container">
-          <img class="logo" src="../images/logo.png" alt="firmen-Logo ABC" />
-        </div>
-
-        <ul>
-          <li>home</li>
-
-          <li>details</li>
+        <ul class="nav">
+          <li>
+            <div id="logo-container">
+              <img src="images/logo.png" alt="logo" class="logo" />
+            </div>
+          </li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Details</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
       </nav>
     </header>
-
     <main>
-      <section>
-        <h1>Live Coding 2021-11-11</h1>
-
-        <div class="column_left">
-          <img class="image" src="../images/ruegen.jpg" alt="bild ruegen" />
-        </div>
-
+      <h1>Live Coding Demo</h1>
+      <section class="column">
+        <a href="https://google.com">
+          <img class="image" src="images/ruegen.jpg" alt="Kreideküste Rügen" />
+        </a>
+      </section>
+      <section class="column">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-          magni accusantium quaerat accusamus inventore assumenda ipsum odit
-          recusandae? Nulla voluptatum dolor error libero laudantium sequi
-          suscipit cum recusandae hic nostrum consequatur, ad, dolores
-          repellendus. Maxime molestias, reiciendis eos blanditiis, deserunt
-          tempora accusamus id ducimus error iure ipsa omnis? Doloremque, aut.
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae
+          repudiandae perferendis aliquam delectus! Dicta, placeat voluptatibus?
+          Blanditiis, quidem, officia eveniet fugit cumque necessitatibus
+          numquam repudiandae vero, ducimus nihil recusandae harum.
         </p>
       </section>
-      <aside>Zusatzinformation</aside>
     </main>
-
-    <footer class="footerbar"><a href="./impressum.html">Impressum</a></footer>
+    <footer>
+      <a href="#">Impressum</a>
+    </footer>
   </body>
 </html>
